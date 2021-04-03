@@ -1,4 +1,4 @@
-object Versions{
+object Versions {
     const val compileSdkVersion = 30
     const val minSdkVersion = 24
     const val targetSdkVersion = 30
@@ -19,9 +19,9 @@ object Versions{
     const val kotlinxDatetime = "0.1.1"
     const val kotlinxSerialization = "1.1.0"
     const val kotlinxCoroutines = "1.3.2"
-    const val ktor =  "1.5.2"
+    const val ktor = "1.5.2"
     const val navigationCompose = "1.0.0-alpha08"
-    const val sqlDelight = "1.4.3"
+    const val sqlDelight = "1.4.4"
 }
 
 object Accompanist {
@@ -38,7 +38,8 @@ object Compose {
     const val uiTooling = "androidx.compose.ui:ui-tooling:${Versions.composeVersion}"
     const val foundation = "androidx.compose.foundation:foundation:${Versions.composeVersion}"
     const val compiler = "androidx.compose.compiler:compiler:${Versions.composeVersion}"
-    const val constraintLayout = "androidx.constraintlayout:constraintlayout-compose:${Versions.constraintLayoutCompose}"
+    const val constraintLayout =
+        "androidx.constraintlayout:constraintlayout-compose:${Versions.constraintLayoutCompose}"
     const val activity = "androidx.activity:activity-compose:${Versions.composeActivities}"
     const val navigation = "androidx.navigation:navigation-compose:${Versions.navigationCompose}"
 }
@@ -69,8 +70,10 @@ object Kotlin {
 
 object Kotlinx {
     const val datetime = "org.jetbrains.kotlinx:kotlinx-datetime:${Versions.kotlinxDatetime}"
-    const val serializationJson = "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.kotlinxSerialization}"
-    const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.kotlinxCoroutines}"
+    const val serializationJson =
+        "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.kotlinxSerialization}"
+    const val coroutinesAndroid =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.kotlinxCoroutines}"
 }
 
 object Ktor {
@@ -84,6 +87,8 @@ object Ktor {
 
 object SQLDelight {
     const val runtime = "com.squareup.sqldelight:runtime:${Versions.sqlDelight}"
+    const val coroutineExtension =
+        "com.squareup.sqldelight:coroutines-extensions:${Versions.sqlDelight}"
     const val androidDriver = "com.squareup.sqldelight:android-driver:${Versions.sqlDelight}"
     const val nativeDriver = "com.squareup.sqldelight:native-driver:${Versions.sqlDelight}"
     const val gradlePlugin = "com.squareup.sqldelight:gradle-plugin:${Versions.sqlDelight}"

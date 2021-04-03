@@ -24,9 +24,12 @@ dependencies {
     kapt(Hilt.compiler)
     implementation(Hilt.android)
 
-    implementation(Accompanist.coil)
+    // Lifecycle (ViewModel + LiveData)
+    val lifecycleVersion = "2.2.0"
+    val liveDataKtx = "2.2.0"
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$liveDataKtx")
 
-    implementation(Kotlinx.datetime)
+    implementation(Accompanist.coil)
 }
 
 android {
