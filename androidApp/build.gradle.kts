@@ -21,6 +21,7 @@ dependencies {
 
     // Needed for viewmodel to do constructor injection
     implementation(Hilt.navigation)
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.3.1")
     kapt(Hilt.compiler)
     implementation(Hilt.android)
 

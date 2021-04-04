@@ -25,17 +25,20 @@ class NewsRepositoryImpl(
             newsApi.getTopHeadlines(country)
         }, {
             it.articles.forEach { article ->
-                newsDbQueries.insertNews(
-                    article.source.id,
-                    article.author,
-                    article.source.name,
-                    article.title,
-                    article.description,
-                    article.url,
-                    article.urlToImage,
-                    article.publishedAt,
-                    article.content
-                )
+                newsDbQueries.transaction {
+                    newsDbQueries.insertNews(
+                        article.source.id,
+                        article.author,
+                        article.source.name,
+                        article.title,
+                        article.description,
+                        article.url,
+                        article.urlToImage,
+                        article.publishedAt,
+                        article.content
+                    )
+                }
+
             }
         }
         )
