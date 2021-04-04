@@ -49,12 +49,14 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(Kotlinx.datetime)
                 implementation(Kotlinx.serializationJson)
-                implementation(Ktor.core)
+                api(Ktor.core)
                 implementation(Ktor.json)
                 implementation(Ktor.serialization)
                 implementation(SQLDelight.runtime)
+                implementation(SQLDelight.coroutineExtension)
+                implementation("io.ktor:ktor-client-logging:1.5.2")
+                implementation("ch.qos.logback:logback-classic:1.2.3")
             }
         }
         val commonTest by getting {

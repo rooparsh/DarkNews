@@ -25,8 +25,6 @@ dependencies {
     implementation(Hilt.android)
 
     implementation(Accompanist.coil)
-
-    implementation(Kotlinx.datetime)
 }
 
 android {
@@ -58,5 +56,4 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = Versions.composeVersion
     }
-    buildToolsVersion = "30.0.2"
 }

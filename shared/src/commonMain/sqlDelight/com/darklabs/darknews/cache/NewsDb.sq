@@ -1,0 +1,21 @@
+CREATE TABLE newsTable(
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    sourceId TEXT,
+    author TEXT,
+    name TEXT,
+    title TEXT,
+    description TEXT,
+    url TEXT,
+    urlToImage TEXT,
+    publishedAt TEXT,
+    content TEXT
+);
+
+getAllNews:
+SELECT * FROM newsTable;
+
+insertNews:
+INSERT OR REPLACE INTO
+newsTable (sourceId,author,name,title,description,url,urlToImage,publishedAt,content)
+VALUES (?,?,?,?,?,?,?,?,?);
+
