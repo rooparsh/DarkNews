@@ -4,7 +4,7 @@ A KMM project which showcases clean architecture and declarative design pattern.
 ### Status: 🚧 In progress 🚧
 
 # Requirements
-1. Android Studio Canary 8
+1. Android Studio Canary 12
 
 # Architecture
 <img class='header-img' src='https://raw.githubusercontent.com/mitchtabian/KMM-Playground/test/extras/clean_architecture_kmm.png' />
@@ -17,7 +17,7 @@ A KMM project which showcases clean architecture and declarative design pattern.
 | 🤖 Framework         | [KMM](https://kotlinlang.org/lp/mobile)         |
 | 🎭 User Interface (Android)   | [Jetpack Compose](https://developer.android.com/jetpack/compose)                |
 | 🎭 User Interface (Ios)   | [SwiftUI](https://developer.apple.com/documentation/swiftui)                |
-| 🏗 Architecture    | [Clean](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel)                            |
+| 🏗 Architecture    | [Clean](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)                            |
 | 💉 DI                | [Hilt](https://developer.android.com/training/dependency-injection/hilt-android)                        |
 | 🌊 Async            | [Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) + [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/)                |
 | 🌐 Networking        | [Ktor](https://ktor.io/)                        |

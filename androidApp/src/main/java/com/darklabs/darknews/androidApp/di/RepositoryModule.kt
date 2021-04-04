@@ -1,6 +1,6 @@
 package com.darklabs.darknews.androidApp.di
 
-import com.darklabs.darknews.cache.DarkNewsDatabase
+import com.darklabs.darknews.cache.NewsDbQueries
 import com.darklabs.darknews.shared.network.NewsApi
 import com.darklabs.darknews.shared.repository.NewsRepository
 import com.darklabs.darknews.shared.repository.NewsRepositoryImpl
@@ -16,7 +16,7 @@ object RepositoryModule {
 
     @Provides
     @Singleton
-    fun providesNewsRepository(newsApi: NewsApi, database: DarkNewsDatabase): NewsRepository {
-        return NewsRepositoryImpl(newsApi, database)
+    fun providesNewsRepository(newsApi: NewsApi, newsDbQueries: NewsDbQueries): NewsRepository {
+        return NewsRepositoryImpl(newsApi, newsDbQueries)
     }
 }

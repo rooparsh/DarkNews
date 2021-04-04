@@ -24,11 +24,6 @@ dependencies {
     kapt(Hilt.compiler)
     implementation(Hilt.android)
 
-    // Lifecycle (ViewModel + LiveData)
-    val lifecycleVersion = "2.2.0"
-    val liveDataKtx = "2.2.0"
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$liveDataKtx")
-
     implementation(Accompanist.coil)
 }
 
@@ -61,5 +56,4 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = Versions.composeVersion
     }
-    buildToolsVersion = "30.0.2"
 }

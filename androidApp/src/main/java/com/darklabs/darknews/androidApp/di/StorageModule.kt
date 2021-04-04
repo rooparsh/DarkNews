@@ -2,6 +2,7 @@ package com.darklabs.darknews.androidApp.di
 
 import android.content.Context
 import com.darklabs.darknews.cache.DarkNewsDatabase
+import com.darklabs.darknews.cache.NewsDbQueries
 import com.darklabs.darknews.shared.local.database.DatabaseFactory
 import com.darklabs.darknews.shared.local.database.DriverFactory
 import dagger.Module
@@ -26,4 +27,11 @@ object StorageModule {
     fun providesDatabase(driverFactory: DriverFactory): DarkNewsDatabase {
         return DatabaseFactory(driverFactory).createDatabase()
     }
+
+    @Singleton
+    @Provides
+    fun providesNewsTable(darkNewsDatabase: DarkNewsDatabase): NewsDbQueries {
+        return darkNewsDatabase.newsDbQueries
+    }
+
 }
