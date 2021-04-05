@@ -18,7 +18,7 @@ A KMM project which showcases clean architecture and declarative design pattern.
 | 🎭 User Interface (Android)   | [Jetpack Compose](https://developer.android.com/jetpack/compose)                |
 | 🎭 User Interface (Ios)   | [SwiftUI](https://developer.apple.com/documentation/swiftui)                |
 | 🏗 Architecture    | [Clean](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)                            |
-| 💉 DI                | [Hilt](https://developer.android.com/training/dependency-injection/hilt-android)                        |
+| 💉 DI (Android)                | [Hilt](https://developer.android.com/training/dependency-injection/hilt-android)                        |
 | 🌊 Async            | [Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) + [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/)                |
 | 🌐 Networking        | [Ktor](https://ktor.io/)                        |
 | 📄 Parsing            | [KotlinX](https://kotlinlang.org/docs/serialization.html)                            |
