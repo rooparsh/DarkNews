@@ -8,17 +8,16 @@ plugins {
 }
 
 android {
-    compileSdkVersion(Versions.compileSdkVersion)
+    compileSdk = Versions.compileSdkVersion
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {
-        minSdkVersion(Versions.minSdkVersion)
-        targetSdkVersion(Versions.targetSdkVersion)
+        minSdk = (Versions.minSdkVersion)
+        targetSdk = (Versions.targetSdkVersion)
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
-    buildToolsVersion = "30.0.2"
     configurations {
         create("androidTestApi")
         create("androidTestDebugApi")
